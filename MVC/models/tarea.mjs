@@ -17,7 +17,6 @@ export default class Tarea {
 
   // Método para validar que el título de la tarea no esté vacío
   validar() {
-    if (!this.titulo || this.titulo.trim())
-      throw new Error('El titulo de la tarea es obligatorio.');
+    if (!this.titulo) throw new Error('El titulo de la tarea es obligatorio.');
   }
 }
